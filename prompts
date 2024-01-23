@@ -1,0 +1,332 @@
+######################################################
+consider yourself a professional business strategy advisor. I want you to study and analyze the data given by the user in the following fields
+{if {product_field} != ""}Product Field: {product_field}{/if}
+{if {audience_field} != ""}Audience Field: {audience_field}{/if}
+{if {competitor_field} != ""}Competitor Field: {competitor_field}{/if}
+{if {vision_field} != ""}Vision Field: {vision_field}{/if}
+{if {budget_field} != ""}Budget Field: {budget_field}{/if}
+{if {kpi_field} != ""}KPI Field: {kpi_field}{/if}
+{if {objective_field} != ""}Objective Field: {objective_field}{/if}
+{if {strategy_field} != ""}Strategy Field: {strategy_field}{/if}
+{if {media_field} != ""}Media Field: {media_field}{/if}
+{if {benefits_field} != ""}Benefits Field: {benefits_field}{/if}
+{if {usp_field} != ""}USP Field: {USP_field}{/if}
+
+
+
+After analyzing this data you need to execute next prompt and guide the user that where he is lacking and where he needs to be more optimal.
+"Hello ChatGPT! Let's embark on crafting a captivating and detailed narrative for {business_field}.
+
+Business Journey: Create a compelling story that vividly recounts the origins, evolution, and key milestones in the life of {business_field}. Include specific anecdotes, turning points, and pivotal moments that have defined its journey. Dive deep into the narrative, allowing the audience to visualize the business's history.
+
+Values and Mission: Explicitly outline the core values and mission statement of {business_field}. Illustrate how these values and mission are deeply woven into the fabric of the business's story. Highlight moments where these values have been demonstrated and let them shine as guiding stars in the narrative.
+
+Actionable Strategies: Provide actionable, practical storytelling strategies, content ideas, and thematic approaches that {business_field} can instantly integrate into its narrative. These strategies should be designed to engage the audience effectively, leaving a lasting impact and forging stronger connections."
+######################################################
+consider yourself a professional business strategy advisor. I want you to study and analyze the data given by the user in the following fields
+{if {product_field} != ""}Product Field: {product_field}{/if}
+{if {audience_field} != ""}Audience Field: {audience_field}{/if}
+{if {competitor_field} != ""}Competitor Field: {competitor_field}{/if}
+{if {vision_field} != ""}Vision Field: {vision_field}{/if}
+{if {budget_field} != ""}Budget Field: {budget_field}{/if}
+{if {kpi_field} != ""}KPI Field: {kpi_field}{/if}
+{if {objective_field} != ""}Objective Field: {objective_field}{/if}
+{if {strategy_field} != ""}Strategy Field: {strategy_field}{/if}
+{if {media_field} != ""}Media Field: {media_field}{/if}
+
+After analyzing this data you need to execute next prompt and guide the user that where he is lacking and where he needs to be more optimal.
+Hello ChatGPT! Dive deeply into the vision and values of {business_field}, providing actionable strategies for their effective communication and embodiment in marketing strategies and organizational culture.
+
+Vision Communication: Detail specific methods through which {business_field} can convey its vision clearly and compellingly across diverse customer touchpoints.
+Values Integration: Propose practical measures for seamlessly integrating the business values into marketing materials, customer interactions, and internal practices.
+Market Resonance: Offer actionable strategies to ensure that the vision and values resonate with the target audience, amplifying the brand's market positioning.
+######################################################
+consider yourself a professional business strategy advisor. I want you to study and analyze the data given by the user in the following fields
+{if {product_field} != ""}Product Field: {product_field}{/if}
+{if {audience_field} != ""}Audience Field: {audience_field}{/if}
+{if {competitor_field} != ""}Competitor Field: {competitor_field}{/if}
+{if {vision_field} != ""}Vision Field: {vision_field}{/if}
+{if {budget_field} != ""}Budget Field: {budget_field}{/if}
+{if {kpi_field} != ""}KPI Field: {kpi_field}{/if}
+{if {objective_field} != ""}Objective Field: {objective_field}{/if}
+{if {strategy_field} != ""}Strategy Field: {strategy_field}{/if}
+{if {media_field} != ""}Media Field: {media_field}{/if}
+
+After analyzing this data you need to execute next prompt and guide the user that where he is lacking and where he needs to be more optimal.
+Differentiation and USP
+Prompt: Hello ChatGPT! Let's pinpoint the unique attributes and value propositions that distinctly position {business_field} in the market.
+
+Unique Offerings: Identify specific products, services, or features that set {business_field} apart. Elaborate on how these offerings create a competitive edge.
+USP Formulation: Craft a Unique Selling Proposition that encapsulates the unique benefits and value offered by {business_field}. Ensure that the USP is concise, compelling, and customer-oriented.
+Immediate Implementation: Outline actionable strategies that {business_field} can employ to communicate and leverage its differentiators and USP effectively in the market starting today
+######################################################
+consider yourself a professional business strategy advisor. I want you to study and analyze the data given by the user in the following fields
+{if {product_field} != ""}Product Field: {product_field}{/if}
+{if {audience_field} != ""}Audience Field: {audience_field}{/if}
+{if {competitor_field} != ""}Competitor Field: {competitor_field}{/if}
+{if {vision_field} != ""}Vision Field: {vision_field}{/if}
+{if {budget_field} != ""}Budget Field: {budget_field}{/if}
+{if {kpi_field} != ""}KPI Field: {kpi_field}{/if}
+{if {objective_field} != ""}Objective Field: {objective_field}{/if}
+{if {strategy_field} != ""}Strategy Field: {strategy_field}{/if}
+{if {media_field} != ""}Media Field: {media_field}{/if}
+
+After analyzing this data you need to execute next prompt and guide the user that where he is lacking and where he needs to be more optimal.
+Customer Profile
+Prompt: Hello ChatGPT! Conduct a comprehensive analysis to develop a nuanced customer profile for {business_field}, ensuring that the profile is immediately actionable. Explore the following aspects:
+
+Demographic Analysis: Detail the key demographic characteristics of the target customer, providing specific insights that {business_field} can use to tailor its offerings.
+
+Behavioral Insights: Offer concrete observations on customer behaviors, preferences, and interactions with {business_field}, outlining steps to leverage these insights for enhanced customer experiences.
+
+Strategic Recommendations: Provide precise strategies for {business_field} to align its offerings and marketing messages with the identified customer profile characteristics for immediate implementation."
+######################################################
+consider yourself a professional business strategy advisor. I want you to study and analyze the data given by the user in the following fields
+{if {product_field} != ""}Product Field: {product_field}{/if}
+{if {audience_field} != ""}Audience Field: {audience_field}{/if}
+{if {competitor_field} != ""}Competitor Field: {competitor_field}{/if}
+{if {vision_field} != ""}Vision Field: {vision_field}{/if}
+{if {budget_field} != ""}Budget Field: {budget_field}{/if}
+{if {kpi_field} != ""}KPI Field: {kpi_field}{/if}
+{if {objective_field} != ""}Objective Field: {objective_field}{/if}
+{if {strategy_field} != ""}Strategy Field: {strategy_field}{/if}
+{if {media_field} != ""}Media Field: {media_field}{/if}
+
+After analyzing this data you need to execute next prompt and guide the user that where he is lacking and where he needs to be more optimal.
+Marketing Platforms and Content
+Prompt: Hello ChatGPT! Create a tailored strategy that identifies the most effective marketing platforms for {business_field} and develops suitable content to engage the audience. Follow these steps:
+
+Platform Identification: Specify the platforms that are most relevant for {business_field}, providing a rationale and immediate steps for establishing a presence on these platforms.
+
+Content Development: Generate specific content ideas, themes, and formats that {business_field} can utilize to engage the audience and enhance visibility on the selected platforms.
+
+Implementation Guidance: Offer detailed steps and best practices for {business_field} to execute the content strategy effectively across the chosen platforms starting today."
+######################################################
+consider yourself a professional business strategy advisor. I want you to study and analyze the data given by the user in the following fields
+{if {product_field} != ""}Product Field: {product_field}{/if}
+{if {audience_field} != ""}Audience Field: {audience_field}{/if}
+{if {competitor_field} != ""}Competitor Field: {competitor_field}{/if}
+{if {vision_field} != ""}Vision Field: {vision_field}{/if}
+{if {budget_field} != ""}Budget Field: {budget_field}{/if}
+{if {kpi_field} != ""}KPI Field: {kpi_field}{/if}
+{if {objective_field} != ""}Objective Field: {objective_field}{/if}
+{if {strategy_field} != ""}Strategy Field: {strategy_field}{/if}
+{if {media_field} != ""}Media Field: {media_field}{/if}
+
+After analyzing this data you need to execute next prompt and guide the user that where he is lacking and where he needs to be more optimal.
+Competitors
+Prompt: Hello ChatGPT! Conduct a competitive analysis for {business_field}, delivering insights that are actionable and strategically advantageous. Follow these steps:
+
+Competitor Breakdown: Identify the primary competitors, detailing their strengths, weaknesses, and market positions. Offer specifics that are directly relevant to {business_field}.
+
+Strategy Formulation: Based on the analysis, formulate specific strategies that {business_field} can implement immediately to enhance its competitive position.
+
+Action Plans: Provide a clear, step-by-step action plan that {business_field} can follow to apply the insights from the competitive analysis for strategic advantage."
+######################################################
+consider yourself a professional business strategy advisor. I want you to study and analyze the data given by the user in the following fields
+{if {product_field} != ""}Product Field: {product_field}{/if}
+{if {audience_field} != ""}Audience Field: {audience_field}{/if}
+{if {competitor_field} != ""}Competitor Field: {competitor_field}{/if}
+{if {vision_field} != ""}Vision Field: {vision_field}{/if}
+{if {budget_field} != ""}Budget Field: {budget_field}{/if}
+{if {kpi_field} != ""}KPI Field: {kpi_field}{/if}
+{if {objective_field} != ""}Objective Field: {objective_field}{/if}
+{if {strategy_field} != ""}Strategy Field: {strategy_field}{/if}
+{if {media_field} != ""}Media Field: {media_field}{/if}
+
+After analyzing this data you need to execute next prompt and guide the user that where he is lacking and where he needs to be more optimal.
+Marketing Funnel and Strategy
+Prompt: Hello ChatGPT! Design a marketing funnel for {business_field}, providing detailed strategies for each stage that are ready for immediate execution. Here's the breakdown:
+
+Funnel Stages: Define each stage of the funnel, describing the customer’s journey and the objectives {business_field} should aim for at each point.
+
+Strategic Tactics: Develop specific tactics, content ideas, and engagement strategies for each stage of the funnel, ensuring they are actionable and effective.
+
+Optimization Guidance: Provide clear instructions on how to continuously optimize the funnel for improved performance and customer conversions, offering specific measures and adjustments."
+######################################################
+consider yourself a professional business strategy advisor. I want you to study and analyze the data given by the user in the following fields
+{if {product_field} != ""}Product Field: {product_field}{/if}
+{if {audience_field} != ""}Audience Field: {audience_field}{/if}
+{if {competitor_field} != ""}Competitor Field: {competitor_field}{/if}
+{if {vision_field} != ""}Vision Field: {vision_field}{/if}
+{if {budget_field} != ""}Budget Field: {budget_field}{/if}
+{if {kpi_field} != ""}KPI Field: {kpi_field}{/if}
+{if {objective_field} != ""}Objective Field: {objective_field}{/if}
+{if {strategy_field} != ""}Strategy Field: {strategy_field}{/if}
+{if {media_field} != ""}Media Field: {media_field}{/if}
+
+After analyzing this data you need to execute next prompt and guide the user that where he is lacking and where he needs to be more optimal.
+Budgets and KPIs
+Prompt: Hello ChatGPT! Develop a strategic plan for {business_field}’s marketing budgets and KPIs, ensuring that each aspect is clearly defined and immediately actionable. Here's how:
+
+Budget Allocation: Present a detailed budget distribution across various marketing activities and platforms, providing a rationale for each allocation to guide {business_field}’s investment decisions.
+
+KPI Definition: Define clear and measurable KPIs for each marketing activity, ensuring they align with {business_field}’s objectives and providing a basis for performance assessment.
+
+Implementation Strategy: Offer a structured approach for {business_field} to implement, track, and optimize the budget and KPIs effectively, ensuring continuous improvement and alignment with business goals."
+######################################################
+consider yourself a professional business strategy advisor. I want you to study and analyze the data given by the user in the following fields
+{if {product_field} != ""}Product Field: {product_field}{/if}
+{if {audience_field} != ""}Audience Field: {audience_field}{/if}
+{if {competitor_field} != ""}Competitor Field: {competitor_field}{/if}
+{if {vision_field} != ""}Vision Field: {vision_field}{/if}
+{if {budget_field} != ""}Budget Field: {budget_field}{/if}
+{if {kpi_field} != ""}KPI Field: {kpi_field}{/if}
+{if {objective_field} != ""}Objective Field: {objective_field}{/if}
+{if {strategy_field} != ""}Strategy Field: {strategy_field}{/if}
+{if {media_field} != ""}Media Field: {media_field}{/if}
+
+After analyzing this data you need to execute next prompt and guide the user that where he is lacking and where he needs to be more optimal.
+Product Offering Strategy in the Lead Journey
+Prompt: Hello ChatGPT! Develop a strategic plan detailing the products or services {business_field} should offer at each stage of the lead journey. Here's how:
+
+Primary Free Products: Recommend specific free products or services that can be offered initially, and provide detailed strategies for their promotion and delivery.
+
+Basic to Premium Products: For each subsequent stage (basic, advanced, premium), identify suitable products or services, and outline precise strategies for positioning, pricing, and promotion.
+
+Implementation Steps: Offer a step-by-step guide for {business_field} to implement the product offering strategy effectively, ensuring alignment with customer needs and business objectives."
+######################################################
+consider yourself a professional business strategy advisor. I want you to study and analyze the data given by the user in the following fields
+{if {product_field} != ""}Product Field: {product_field}{/if}
+{if {audience_field} != ""}Audience Field: {audience_field}{/if}
+{if {competitor_field} != ""}Competitor Field: {competitor_field}{/if}
+{if {vision_field} != ""}Vision Field: {vision_field}{/if}
+{if {budget_field} != ""}Budget Field: {budget_field}{/if}
+{if {kpi_field} != ""}KPI Field: {kpi_field}{/if}
+{if {objective_field} != ""}Objective Field: {objective_field}{/if}
+{if {strategy_field} != ""}Strategy Field: {strategy_field}{/if}
+{if {media_field} != ""}Media Field: {media_field}{/if}
+{if {benefits_field} != ""}Benefits Field: {benefits_field}{/if}
+{if {usp_field} != ""}USP Field: {USP_field}{/if}
+
+After analyzing this data you need to execute next prompt and guide the user that where he is lacking and where he needs to be more optimal.
+Platform-Specific Content Strategy
+Prompt: Hello ChatGPT! Assist in devising a precise content strategy that is meticulously tailored for various platforms, optimizing engagement, reach, and conversion. Here's how to master content on different platforms for {business_field}:
+
+Facebook:
+
+Identify types of content that resonate on Facebook.
+Provide specific post ideas, optimal posting times, and engagement tactics.
+Instagram:
+
+Suggest visual content and storytelling approaches effective on Instagram.
+Offer hashtag strategies and ideas for stories and IGTV.
+LinkedIn:
+
+Outline content strategies that enhance professional networking and B2B engagements.
+Offer post and article ideas to bolster {business_field}’s industry authority.
+TikTok:
+
+Propose content that aligns with TikTok’s dynamic and creative platform nature.
+Offer ideas for leveraging trends and creating engaging short-form videos.
+Twitter:
+
+Develop strategies to optimize tweets for visibility and engagement.
+Recommend content ideas, hashtags, and engagement tactics.
+Email Marketing:
+
+Provide strategies for content segmentation and personalization.
+Suggest email formats and content that optimize open rates and conversions.
+SEO:
+
+Offer strategies for keyword optimization and improving online content visibility.
+Suggest actionable on-page SEO tactics to enhance search engine rankings."
+######################################################
+consider yourself a professional business strategy advisor. I want you to study and analyze the data given by the user in the following fields
+{if {product_field} != ""}Product Field: {product_field}{/if}
+{if {audience_field} != ""}Audience Field: {audience_field}{/if}
+{if {competitor_field} != ""}Competitor Field: {competitor_field}{/if}
+{if {vision_field} != ""}Vision Field: {vision_field}{/if}
+{if {budget_field} != ""}Budget Field: {budget_field}{/if}
+{if {kpi_field} != ""}KPI Field: {kpi_field}{/if}
+{if {objective_field} != ""}Objective Field: {objective_field}{/if}
+{if {strategy_field} != ""}Strategy Field: {strategy_field}{/if}
+{if {media_field} != ""}Media Field: {media_field}{/if}
+
+After analyzing this data you need to execute next prompt and guide the user that where he is lacking and where he needs to be more optimal.
+Customer Profile Matching Business Needs
+Prompt: Hello ChatGPT! Develop a precise customer profile that aligns closely with {business_field}’s offerings and objectives, ensuring that the profile is actionable and strategically advantageous. Here's how to align your customer profile with your business needs:
+
+Demographic Details: Provide a detailed breakdown of the customer demographics that {business_field} should target, ensuring these details are actionable and relevant.
+
+Psychographic and Behavioral Insights: Deliver insights into customer behaviors, interests, and preferences, offering strategies for {business_field} to align its offerings accordingly.
+
+Strategic Implementation: Offer specific strategies for {business_field} to tailor its products, services, and marketing efforts based on the developed customer profile to enhance relevance and appeal."
+######################################################
+consider yourself a professional business strategy advisor. I want you to study and analyze the data given by the user in the following fields
+{if {product_field} != ""}Product Field: {product_field}{/if}
+{if {audience_field} != ""}Audience Field: {audience_field}{/if}
+{if {competitor_field} != ""}Competitor Field: {competitor_field}{/if}
+{if {vision_field} != ""}Vision Field: {vision_field}{/if}
+{if {budget_field} != ""}Budget Field: {budget_field}{/if}
+{if {kpi_field} != ""}KPI Field: {kpi_field}{/if}
+{if {objective_field} != ""}Objective Field: {objective_field}{/if}
+{if {strategy_field} != ""}Strategy Field: {strategy_field}{/if}
+{if {media_field} != ""}Media Field: {media_field}{/if}
+
+After analyzing this data you need to execute next prompt and guide the user that where he is lacking and where he needs to be more optimal.
+Penetration Product Ideas in Email Marketing
+Prompt: Hello ChatGPT! Generate innovative product ideas that {business_field} can effectively promote through email marketing to penetrate the market and engage customers. Here’s how to invigorate your email marketing approach:
+
+Product Ideas: Propose specific products, like blueprints or tips, that will capture the audience’s interest and encourage engagement.
+
+Email Marketing Strategies: Develop detailed strategies for promoting these products through email, ensuring that the content is engaging and the call-to-action is compelling.
+
+Action Plan: Provide a clear action plan that outlines how {business_field} can implement these product ideas and email marketing strategies for immediate market penetration and customer engagement."
+######################################################
+consider yourself a professional business strategy advisor. I want you to study and analyze the data given by the user in the following fields:
+
+{if {product_field} != ""}Product Field: {product_field}{/if}
+{if {audience_field} != ""}Audience Field: {audience_field}{/if}
+{if {competitor_field} != ""}Competitor Field: {competitor_field}{/if}
+{if {vision_field} != ""}Vision Field: {vision_field}{/if}
+{if {budget_field} != ""}Budget Field: {budget_field}{/if}
+{if {kpi_field} != ""}KPI Field: {kpi_field}{/if}
+{if {objective_field} != ""}Objective Field: {objective_field}{/if}
+{if {strategy_field} != ""}Strategy Field: {strategy_field}{/if}
+{if {media_field} != ""}Media Field: {media_field}{/if}
+
+SWOT Analysis for nextweb in the digital marketing industry:
+
+Strengths:
+1. Expertise in SEO, SEM, digital platforms, and online marketing solutions: Leverage your knowledge and experience in these areas to position nextweb as a trusted and reliable provider of digital marketing services
+
+  - Action: Showcase case studies and success stories highlighting the positive impact of your services on small businesses and entrepreneurs.
+
+2. Vision to change small business attitude towards online marketing: Emphasize the importance of marketing planning and strategy to educate small businesses about the significance of a well-thought-out approach
+
+  - Action: Develop educational content, such as blog posts, videos, and webinars, that explain the benefits of marketing strategy and offer practical tips for implementation.
+
+3. Authenticity, transparency, professionalism, and business success as core values: Use these values to differentiate nextweb from competitors and build trust with potential clients
+
+  - Action: Incorporate these values into your branding, communication, and customer interactions to establish a strong reputation.
+
+Weaknesses:
+1. Limited budget: The allocated budget of 1000 NIS per month may restrict the scope of marketing activities
+
+  - Action: Focus on cost-effective marketing strategies, such as targeted social media advertising, content marketing, and email campaigns, to maximize the impact within the given budget.
+
+2. Lack of awareness among small businesses: Many small businesses may not be aware of the importance of marketing strategy and the potential consequences of not having one
+
+  - Action: Develop informative content that highlights the risks of not having a marketing strategy and offers solutions through your app. Utilize social media, industry forums, and partnerships with relevant organizations to reach a wider audience.
+
+Opportunities:
+1. Growing demand for digital marketing services: With the increasing reliance on online platforms, small businesses are seeking effective digital marketing solutions
+
+  - Action: Position nextweb as a go-to solution provider through targeted advertising, content marketing, and partnerships with industry influencers.
+
+2. Rising popularity of social media platforms: Facebook, Instagram, YouTube, TikTok, and LinkedIn offer vast opportunities to reach and engage with small business owners and entrepreneurs
+
+  - Action: Develop tailored content and advertising campaigns for each platform to maximize reach and engagement. Utilize analytics and insights to optimize strategies for better results.
+
+Threats:
+1. Intense competition in the SEM field: Competitors in the SEM space may offer similar services, making it crucial to differentiate nextweb
+
+  - Action: Highlight your unique selling points, such as the app that builds marketing strategy at the push of a button, and provide exceptional customer service to stand out from the competition.
+
+2. Rapidly evolving digital marketing landscape: Changes in algorithms, platform policies, and consumer behavior can pose challenges
+
+  - Action: Stay updated with industry trends and adapt quickly to changes. Continuously monitor and analyze campaign performance to optimize strategies accordingly.
+
+By addressing these strengths, weaknesses, opportunities, and threats, nextweb can enhance its position in the digital marketing industry. Implementing the suggested actions will help maximize strengths, overcome weaknesses, capitalize on opportunities, and mitigate threats, ultimately leading to greater success and growth.
+######################################################

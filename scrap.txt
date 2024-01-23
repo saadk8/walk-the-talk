@@ -1,0 +1,1 @@
+    "selected_analysis_types": ["svet", "usp_builder", "customer_profile", "competitive_analysis", "budget_strategy"],
