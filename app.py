@@ -78,6 +78,7 @@ def analysis():
         for analysis_type in analysis_types:
             type_code = type_mapping.get(analysis_type)  # Get the corresponding type code
             if type_code:
+                logger.info(f"Fetching prompts for analysis type: {analysis_type} and type code: {type_code}")
                 url = f'https://walkthetalk.marketing/wp-json/custom/v1/ai_prompts/?type={type_code}&snid={snid}'
                 # Assuming you want to send a request to each URL and collect the responses
                 response = requests.get(url)
