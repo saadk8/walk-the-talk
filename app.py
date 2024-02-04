@@ -54,6 +54,8 @@ def test():
 @app.route('/api/v1/analysis', methods=['POST'])
 def analysis():
     try: 
+        payload = request.json
+        logger.info(f"Received payload: {payload}")
         language = request.json['language']
         analysis_types = request.json['analysis_types']
         business_name = request.json['business_name']
