@@ -6,6 +6,8 @@ from custom_logger import CustomTimedRotatingFileHandler
 from datetime import datetime
 from walk_the_talk import WalkTheTalk, validate_data
 import threading
+import requests
+from gpt import get_AI_response
 
 
 if not os.path.exists('logs'):
@@ -22,6 +24,28 @@ logger.addHandler(handler)
 
 app = Flask(__name__)
 CORS(app)
+
+type_mapping = {
+    "Swot": "sw",
+    "Strategic Narrative Builder": "snb",
+    "Business Identity - Vision, Values and Differentiation": "vva",
+    "Customer Profile": "tcp",
+    "Marketing Funnel Strategy": "mfs",
+    "Marketing Platforms & Content": "mpcc",
+    "Competitors": "cmptit",
+    "Budget & KPI Strategy": "bks",
+    "Marketing plan - 12 Month": "mp12m",
+    # Hebrew mappings (if different, add them here, assuming they're the same for simplicity)
+    # "Swot": "sw",
+    # "הנחיות לכתיבת נרטיב": "snb",
+    # "זהות עסקית": "vva",
+    # "קהלי יעד": "tcp",
+    # "אסטרטגיית משפך שיווקי": "mfs",
+    # "פלטפורמות ותוכן שיווקי": "mpcc",
+    # "ניתוח מתחרים בעסק": "cmptit",
+    # "תקציבים ונתוני פרסום": "bks",
+    # "תוכנית שיווק": "mp12m"
+}
 
 @app.route('/api/v1/test', methods=['GET'])
 def test():
@@ -44,6 +68,24 @@ def analysis():
         active_social_media_platforms = request.json['active_social_media_platforms']
         marketing_budget = request.json['marketing_budget']
 
+        language_to_snid = {'english': '1', 'hebrew': '2'}
+        snid = language_to_snid.get(language)
+        prompts = {}
+
+        # Iterate over each analysis type and construct the URL
+        for analysis_type in analysis_types:
+            type_code = type_mapping.get(analysis_type)  # Get the corresponding type code
+            if type_code:
+                url = f'https://walkthetalk.marketing/wp-json/custom/v1/ai_prompts/?type={type_code}&snid={snid}'
+                # Assuming you want to send a request to each URL and collect the responses
+                response = requests.get(url)
+                if response.status_code == 200:
+                    prompts[analysis_type] = response.json()
+                else:
+                    logger.error(f"Error fetching prompts for analysis type: {analysis_type}")
+            else:
+                logger.error(f"Invalid analysis type: {analysis_type}")
+
         business_details = f"""\
 Business Name: {business_name}
 Industry: {industry}
@@ -57,37 +99,29 @@ Competitor: {competitor}
 Active Social Media Platforms: {active_social_media_platforms}
 Marketing Budget: {marketing_budget} \
         """
-        walk_the_talk = WalkTheTalk(language, analysis_types, business_name)
+
         results = {}
         def worker1():
-            results['swot_analysis'] = walk_the_talk.swot(business_details)
+            results['swot_analysis'] = get_AI_response(system_message=prompts['Swot'], prompt=business_details)
         def worker2():
-            results['strategic_narrative_builder'] = walk_the_talk.strategic_narrative_builder(business_details)
+            results['strategic_narrative_builder'] = get_AI_response(system_message=prompts['Strategic Narrative Builder'], prompt=business_details)
         def worker3():
-            results['vision_and_values_amplifier'] = walk_the_talk.vision_and_values_amplifier(business_details)
+            results['business_identity'] = get_AI_response(system_message=prompts['Business Identity - Vision, Values and Differentiation'], prompt=business_details)
         def worker4():
-            results['distinctive_edge_and usp_builder'] = walk_the_talk.usp_builder(business_details)
+            results['customer_profile'] = get_AI_response(system_message=prompts['Customer Profile'], prompt=business_details)
         def worker5():
-            results['analyze_customer_profiling'] = walk_the_talk.customer_profile(business_details)
+            results['marketing_funnel_strategy'] = get_AI_response(system_message=prompts['Marketing Funnel Strategy'], prompt=business_details)
         def worker6():
-            results['marketing_platform_and_content_creation'] = walk_the_talk.marketing_platform_and_content_creation(business_details)
+            results['marketing_platforms_content'] = get_AI_response(system_message=prompts['Marketing Platforms & Content'], prompt=business_details)
         def worker7():
-            results['competitive_analysis_and_strategies'] = walk_the_talk.competitive_strategies(business_details)
+            results['competitors'] = get_AI_response(system_message=prompts['Competitors'], prompt=business_details)
         def worker8():
-            results['marketing_funnel_strategy'] = walk_the_talk.mar_funnel_strategy(business_details)
+            results['budget_kpi_strategy'] = get_AI_response(system_message=prompts['Budget & KPI Strategy'], prompt=business_details)
         def worker9():
-            results['budget_and_kpi_strategy'] = walk_the_talk.kpi_strategy(business_details)
-        def worker10():
-            results['lead_journey_and_product_strategy'] = walk_the_talk.lead_journey_product_strategy(business_details)
-        def worker11():
-            results['content_strategy'] = walk_the_talk.content_strategy(business_details)
-        def worker12():
-            results['tailor_customer_profile'] = walk_the_talk.tailor_customer_profile(business_details)
-        def worker13():
-            results['email_marketing_innovation'] = walk_the_talk.email_marketing_innovation(business_details)
+            results['marketing_plan_12_month'] = get_AI_response(system_message=prompts['Marketing plan - 12 Month'], prompt=business_details)
 
         threads = []
-        for worker in [worker1, worker2, worker3, worker4, worker5, worker6, worker7, worker8, worker9, worker10, worker11, worker12, worker13]:
+        for worker in [worker1, worker2, worker3, worker4, worker5, worker6, worker7, worker8, worker9]:
             thread = threading.Thread(target=worker)
             thread.start()
             threads.append(thread)
