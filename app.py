@@ -88,6 +88,7 @@ def analysis():
             else:
                 logger.error(f"Invalid analysis type: {analysis_type}")
 
+        print(prompts)
         business_details = f"""\
 Business Name: {business_name}
 Industry: {industry}
@@ -109,8 +110,8 @@ Marketing Budget: {marketing_budget} \
             logger.info("Starting Strategic Narrative Builder")
             results['strategic_narrative_builder'] = get_AI_response(system_message=prompts['Strategic Narrative Builder'], prompt=business_details)
         def worker3():
-            logger.info("Starting Business Identity - Vision, Values and Differentiation")
-            results['business_identity'] = get_AI_response(system_message=prompts['Business Identity - Vision, Values and Differentiation'], prompt=business_details)
+            logger.info("Starting Business Identity – Vision, Values and Differentiation")
+            results['business_identity'] = get_AI_response(system_message=prompts['Business Identity – Vision, Values and Differentiation'], prompt=business_details)
         def worker4():
             logger.info("Starting Customer Profile")
             results['customer_profile'] = get_AI_response(system_message=prompts['Customer Profile'], prompt=business_details)
@@ -138,6 +139,7 @@ Marketing Budget: {marketing_budget} \
             threads.append(thread)
         for thread in threads:
             thread.join()
+        print(results)
         return jsonify({'message': 'Success', 'results': results}), 200
     except Exception as e:
         logger.error(e)
@@ -163,7 +165,6 @@ Business Name: {business_name}
 Industry: {industry}
 Narrative: {narrative}
 Vision and Values: {vision_values}
-USP: {usp}  
 Target Audience: {target_audience}
 Products and Services: {products_and_services}
 Marketing Objectives and Goals: {marketing_objectives_and_goals}
