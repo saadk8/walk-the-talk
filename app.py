@@ -26,7 +26,7 @@ app = Flask(__name__)
 CORS(app)
 
 type_mapping = {
-    "Swot": "sw",
+    "SWOT (Strengths, Weaknesses, Opportunities, Threats)": "sw",
     "Strategic Narrative Builder": "snb",
     "Business Identity - Vision, Values and Differentiation": "vva",
     "Customer Profile": "tcp",
@@ -105,7 +105,7 @@ Marketing Budget: {marketing_budget} \
 
         results = {}
         def worker1():
-            results['swot_analysis'] = get_AI_response(system_message=prompts['Swot'], prompt=business_details)
+            results['swot_analysis'] = get_AI_response(system_message=prompts['SWOT (Strengths, Weaknesses, Opportunities, Threats)'], prompt=business_details)
         def worker2():
             results['strategic_narrative_builder'] = get_AI_response(system_message=prompts['Strategic Narrative Builder'], prompt=business_details)
         def worker3():
