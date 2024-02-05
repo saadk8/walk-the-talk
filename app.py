@@ -123,6 +123,7 @@ Marketing Budget: {marketing_budget} \
         def worker9():
             results['marketing_plan_12_month'] = get_AI_response(system_message=prompts['Marketing plan - 12 Month'], prompt=business_details)
 
+        logger.info("Starting Threads")
         threads = []
         for worker in [worker1, worker2, worker3, worker4, worker5, worker6, worker7, worker8, worker9]:
             thread = threading.Thread(target=worker)
