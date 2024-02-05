@@ -28,7 +28,7 @@ CORS(app)
 type_mapping = {
     "SWOT (Strengths, Weaknesses, Opportunities, Threats)": "sw",
     "Strategic Narrative Builder": "snb",
-    "Business Identity - Vision, Values and Differentiation": "vva",
+    "Business Identity – Vision, Values and Differentiation": "vva",
     "Customer Profile": "tcp",
     "Marketing Funnel Strategy": "mfs",
     "Marketing Platforms & Content": "mpcc",
@@ -138,11 +138,10 @@ Marketing Budget: {marketing_budget} \
 def validate():
     language = request.json['language']
     analysis_types = request.json['analysis_types']
-    business_name = request.json['business_name']
-    industry = request.json['industry']
-    narrative = request.json['narrative']
-    vision_values = request.json['vision_values']
-    usp = request.json['usp']
+    business_name = request.json['businessname']
+    industry = request.json['businessindustry']
+    narrative = request.json['industry']
+    vision_values = request.json['business_name']
     target_audience = request.json['target_audience']
     products_and_services = request.json['products_and_services']
     marketing_objectives_and_goals = request.json['marketing_objectives_and_goals']
