@@ -103,22 +103,31 @@ Marketing Budget: {marketing_budget} \
 
         results = {}
         def worker1():
+            logger.info("Starting SWOT Analysis")
             results['swot_analysis'] = get_AI_response(system_message=prompts['SWOT (Strengths, Weaknesses, Opportunities, Threats)'], prompt=business_details)
         def worker2():
+            logger.info("Starting Strategic Narrative Builder")
             results['strategic_narrative_builder'] = get_AI_response(system_message=prompts['Strategic Narrative Builder'], prompt=business_details)
         def worker3():
+            logger.info("Starting Business Identity - Vision, Values and Differentiation")
             results['business_identity'] = get_AI_response(system_message=prompts['Business Identity - Vision, Values and Differentiation'], prompt=business_details)
         def worker4():
+            logger.info("Starting Customer Profile")
             results['customer_profile'] = get_AI_response(system_message=prompts['Customer Profile'], prompt=business_details)
         def worker5():
+            logger.info("Starting Marketing Funnel Strategy")
             results['marketing_funnel_strategy'] = get_AI_response(system_message=prompts['Marketing Funnel Strategy'], prompt=business_details)
         def worker6():
+            logger.info("Starting Marketing Platforms & Content")
             results['marketing_platforms_content'] = get_AI_response(system_message=prompts['Marketing Platforms & Content'], prompt=business_details)
         def worker7():
+            logger.info("Starting Competitors")
             results['competitors'] = get_AI_response(system_message=prompts['Competitors'], prompt=business_details)
         def worker8():
+            logger.info("Starting Budget & KPI Strategy")
             results['budget_kpi_strategy'] = get_AI_response(system_message=prompts['Budget & KPI Strategy'], prompt=business_details)
         def worker9():
+            logger.info("Starting Marketing plan - 12 Month")
             results['marketing_plan_12_month'] = get_AI_response(system_message=prompts['Marketing plan - 12 Month'], prompt=business_details)
 
         logger.info("Starting Threads")
