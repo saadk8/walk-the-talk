@@ -58,11 +58,10 @@ def analysis():
         logger.info(f"Received payload: {payload}")
         language = request.json['language']
         analysis_types = request.json['analysis_types']
-        business_name = request.json['business_name']
-        industry = request.json['industry']
-        narrative = request.json['narrative']
-        vision_values = request.json['vision_values']
-        usp = request.json['usp']
+        business_name = request.json['businessname']
+        industry = request.json['businessindustry']
+        narrative = request.json['industry']
+        vision_values = request.json['business_name']
         target_audience = request.json['target_audience']
         products_and_services = request.json['products_and_services']
         marketing_objectives_and_goals = request.json['marketing_objectives_and_goals']
@@ -94,7 +93,6 @@ Business Name: {business_name}
 Industry: {industry}
 Narrative: {narrative}
 Vision and Values: {vision_values}
-USP: {usp}  
 Target Audience: {target_audience}
 Products and Services: {products_and_services}
 Marketing Objectives and Goals: {marketing_objectives_and_goals}
