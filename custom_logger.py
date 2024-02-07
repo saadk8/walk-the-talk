@@ -10,10 +10,14 @@ class CustomTimedRotatingFileHandler(TimedRotatingFileHandler):
         self.backupCount = backupCount
         self.current_date = datetime.now().strftime("%Y-%m-%d")
         filename = self.generate_filename()
-        super().__init__(filename, when, interval, backupCount)
+        super().__init__(self.generate_filename(), when, interval, backupCount)
 
     def generate_filename(self):
         return os.path.join(self.dir_name, f'walkthetalk-{self.current_date}.log')
+    
+    def doRollover(self):
+        self.baseFilename = self.generate_filename()
+        super().doRollover()
 
     def emit(self, record):
         new_date = datetime.now().strftime("%Y-%m-%d")
